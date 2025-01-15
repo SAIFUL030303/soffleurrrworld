@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="about me.html">ABOUT ME</a>
+        <a href="skill.html">SKILL</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="contact me.html">CONTACT</a>
+    </nav>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiful Akmal's Beauty World</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #ff69b4;
+            border-radius: 5px;
+        }
+
+        .navbar a::after {
+            content: " ❤";
+            color: #ff69b4;
+            font-size: 1.2rem;
+        }
+
+        .hero {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            background-color: #ffebf0;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 1;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            color: #ff69b4;
+            margin-bottom: 20px;
+       
+        }
+        .hero-text h2 {
+            font-size: 1.8rem;
+            color: #ff69b4;
+            margin-bottom: 20px;
+
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .hero-image {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+       
+        .music-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            background: url('music logo (home).jpg') no-repeat center center / cover;
+            border-radius: 50%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>SOFFLEURRR WORLD</h1>
+            <h2>WELCOME TO MY BEAUTY WEBSITE</h2>
+            <p>HAPPY TO SEE YOU GUYS ON MY WEBSITE!!! <sub>HEHEHEHE </sub></p>
+        </div>
+        <div class="hero-image">
+            <img src="picture 1 (home).jpg" style="width: 65%;" alt="Saiful Akmal's Image">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Saiful Akmal. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Music Icon and Script -->
+    <div class="music-icon" onclick="toggleMusic()"></div>
+    <audio id="background-music" loop>
+        <source src="ive all night.mp3" type="audio/mpeg">
+        
+    </audio>
+    <script>
+        let isPlaying = false;
+        const music = document.getElementById('background-music');
+
+        function toggleMusic() {
+            if (isPlaying) {
+                music.pause();
+            } else {
+                music.play();
+            }
+            isPlaying = !isPlaying;
+        }
+    </script>
+</body>
+</html>
