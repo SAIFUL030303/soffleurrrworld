@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>education - Saiful Akmal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffebf0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #ff69b4;
+            border-radius: 5px;
+        }
+
+        .navbar a.active {
+            background-color: #ff69b4;
+            border-radius: 5px;
+        }
+
+        .navbar a span {
+            color: #ff69b4;
+            font-size: 1.2rem;
+        }
+
+        .content {
+            text-align: center;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            color: #ff69b4;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .content-box {
+        border: 3px solid black;
+        width: 400px;
+        background-color: lightpink;
+        padding: 10px;
+        }
+        .music-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            background: url('music logo (home).jpg') no-repeat center center / cover;
+            border-radius: 50%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="home.html">HOME <span>&#10084;</span></a>
+        <a href="about me.html">ABOUT ME <span>&#10084;</span></a>
+        <a href="skill.html">SKILL <span>&#10084;</span></a>
+        <a href="education.html">EDUCATION <span>&#10084;</span></a>
+        <a href="contact me.html">CONTACT <span>&#10084;</span></a>
+    </nav>
+
+    <div class="content">
+        <h1> MY EDUCATION JOURNEY</h1>
+        <p>Hello! I'm Saiful Akmal. Welcome to my education page</p>
+        <div class="container-box">
+        <ol>
+            <li> Sekolah Kebangsaan Bandar Baru Sungai Buloh  </li>
+            <li> KAFA Intergrasi As Solihin Sungai Buloh</li>
+            <li> Sekolah Menengah Kebangsaan Bandar Baru Sungai Buloh </li>
+            <li> Universiti Teknologi Mara kampus Segamat</li>
+          </ol>
+          </div>
+        <p>My education journey began with me attending Sekolah Kebangsaan Bandar Baru Sungai Buloh, Selangor <sup>(SKBBSB) </sup>under the Gombak district from grade 1 to grade 6 which is at the UPSR level.</p>
+
+        <div class="hero-image">
+            <img src="skbbsb (education).jpg" style="width: 24%;" alt="Saiful Akmal's Image" hspace="20"> 
+            <img src="skbbsb budak.jpg" style="width: 25%;" alt="Saiful Akmal's Image">
+        </div>
+
+        <p>After being at SKBBSB, I went to secondary school at Sekolah Menengah Kebangsaan Bandar Baru Sungai Buloh, Selangor, where my SMK school was just next to SK. I went to SMK from Form 1 to Form 5, which is up to SPM level.</p>
+
+        <div class="hero-image">
+            <img src="smkbbsb logo.jpg" style="width: 24%;" alt="Saiful Akmal's Image" hspace="20"> 
+            <img src="smkbbsb 2 .jpg" style="width: 25%;" alt="Saiful Akmal's Image">
+            <img src="smkbbsb ramai.jpg" style="width: 25%;" alt="Saiful Akmal's Image"hspace="20">
+            <img src="smkbbsb ramai 2.jpg" style="width: 25%;" alt="Saiful Akmal's Image">
+        </div>
+
+    <div class="music-icon" onclick="toggleMusic()"></div>
+        <audio id="background-music" loop>
+            <source src="ive all night.mp3" type="audio/mpeg">
+            
+            <div class="music-icon" onclick="toggleMusic()"></div>
+            <audio id="background-music" loop>
+                <source src="ive all night.mp3" type="audio/mpeg">
+                
+            </audio>
+            <script>
+                let isPlaying = false;
+                const music = document.getElementById('background-music');
+        
+                function toggleMusic() {
+                    if (isPlaying) {
+                        music.pause();
+                    } else {
+                        music.play();
+                    }
+                    isPlaying = !isPlaying;
+                }
+            </script>
+        </body>
+        </html>
+        
+</body>
+</html>
